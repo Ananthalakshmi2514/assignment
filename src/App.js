@@ -4,6 +4,15 @@ import Header from"./Components/header";
 import Navigation from"./Components/navigation";
 
 import './App.css';
+import Banner from './Components/banner';
+import Aboutus from './Components/aboutus';
+import Middle1 from './Components/middle1';
+import AboutComp from './Components/aboutCompany';
+import Embedded from './Components/embedded';
+import Mission from './Components/mission';
+import Serivce from './Components/services';
+import Signup from './Components/signup';
+import Footer from './Components/footer';
 
 
 function App() {
@@ -11,6 +20,16 @@ function App() {
     <div className="App">
 <Header/>
 <Navigation/>
+<Banner/>
+<Aboutus/>
+<Middle1/>
+<AboutComp/>
+<Embedded/>
+<Mission/>
+<Serivce/>
+<Signup/>
+<Footer/>
+
     </div>
   );
 }
