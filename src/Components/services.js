@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
-import image8 from "../images/download4.jfif";
-import image9 from "../images/download7.jpg";
-import image10 from "../images/download9.jfif";
+import image8 from "../images/serviceimage.jpg";
+import image9 from "../images/download9.jfif";
+import image10 from "../images/download7.jpg";
 import Button from "@mui/material/Button";
 
 class Serivce extends Component {
@@ -9,20 +9,16 @@ class Serivce extends Component {
     return (
       <Fragment>
         <div className="service">
-          <div className="ser-left"></div>
-          <div className="ser-right"></div>
-          <img
-            src={image8}
-            alt="crop architecture opening"
-            className="image8"
-          />
-          <img src={image10} alt="Conference" className="image10" />
-          <img src={image9} alt="low angle building" className="image9" />
+          <div className="service-left"></div>
+          <div className="service-right"></div>
+          <img src={image8} alt="" className="image8"/>
+          <img src={image10} alt="" className="image10" />
+          <img src={image9} alt="" className="image9" />
           <div className="wwd">
             <h3>WHAT WE DO</h3>
             <h2>
-              Full service architecture design studio with offices in Brooklyn,
-              New York and Richmond
+              Full service<br/> architecture design <br/>studio with offices in <br/>Brooklyn,
+              New York <br/>and Richmond
             </h2>
             <p>
               Images from <a href="#">Freepik</a>

@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import image11 from "../images/download.jfif";
+import image11 from "../images/signup.jpg";
 import TextField from "@mui/material/TextField";
 import TextareaAutosize from "@mui/base/TextareaAutosize";
 import Button from "@mui/material/Button";
@@ -15,41 +15,44 @@ class Signup extends Component {
     return (
       <Fragment>
         <div className="signup">
-          <img src={image11} alt="Construction Paln" className="image11" />
+          <img src={image11} alt="" className="image11" />
 
           <div className="Ex-offrs">
             <h2>Sign Up for Exclusive Offers</h2>
             <p>{this.state.sampleText}</p>
             <div className="fields">
               <TextField
-                className="outline outlined-name"
+                className="outlined-name"
                 label="Enter Your Name"
                 variant="outlined"
                 style={{
-                  width: 200,
-                  borderRadius: 20,
-                  background: "#aaa",
+                  height:50,
+                  width: 250,
+                  borderRadius:30,
+                  background:"lightgray",
                 }}
               />
               <TextField
-                className="outline outlined-email"
+                className="outlined-email"
                 label="Enter a valid Email address"
                 variant="outlined"
                 style={{
-                  width: 200,
-                  borderRadius: 20,
-                  background: "#aaa",
+                  height:50,
+                  width: 250,
+                  borderRadius:30,
+                  background: "lightgray",
                 }}
               />
               <TextField
-                className="outline outlined-number"
-                label="Telephone number"
+                className="outlined-number"
+                label="mobile number"
                 variant="outlined"
                 type="number"
                 style={{
-                  width: 200,
-                  borderRadius: 20,
-                  background: "#aaa",
+                  height:50,
+                  width: 250,
+                  borderRadius:40,
+                  background: "lightgray",
                 }}
               />
             </div>
@@ -59,10 +62,10 @@ class Signup extends Component {
                 minRows={9}
                 placeholder=" Enter Your Message"
                 style={{
-                  width: 640,
-                  borderRadius: 10,
+                  width:780,
+                  borderRadius:20,
                   marginTop: 20,
-                  background: "#aaa",
+                  background: "lightgray",
                 }}
               />
             </div>
@@ -70,7 +73,7 @@ class Signup extends Component {
               variant="contained"
               style={{
                 textTransform: "capitalize",
-                width: 600,
+                width:780,
                 borderRadius: 100,
                 backgroundColor: "rgb(255, 208, 0)",
                 color: "#000",

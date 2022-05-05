@@ -12,9 +12,9 @@ class Embedded extends Component {
       info: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum",
       styles: {
         backgroundColor: "rgb(255, 208, 0)",
-        borderRadius: "50%",
-        fontSize: "70px",
-      },
+        borderRadius: "100%",
+        fontSize: "90px",
+         },
     };
   }
   render() {
@@ -23,20 +23,16 @@ class Embedded extends Component {
         <div className="embedded">
           <div className="em-top"></div>
           <div className="em-bottom"></div>
-          <img src={image4} alt="low angle building" className="image4" />
-          <img src={image5} alt="young girl" className="image5" />
-          <img
-            src={image6}
-            alt="crop architecture opening"
-            className="image6"
-          />
-          <div className="emarch">
+          <img src={image4} alt=" building" className="image4" />
+          <img src={image5} alt="girl" className="image5" />
+          <img src={image6} alt="architecture " className="image6"/>
+          <div className="Wecreate">
             <ArchitectureIcon style={this.state.styles} />
             <h2>We Create embedded architecture</h2>
             <p>
-              Paragraph. Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Curabitur id suscipit ex.Suspendisse rhoncus laoreet purus
-              quis elementum. Phasellus sed efficitur dolor, et ultricies sapien
+              Paragraph. Lorem ipsum dolor sit amet,<br/> consectetur adipiscing
+              elit. Curabitur id suscipit <br/>ex.Suspendisse rhoncus laoreet purus
+              quis<br/> elementum. Phasellus sed efficitur dolor, et<br/> ultricies sapien
             </p>
             <p>
               images from <a href="#">Freepik</a>
@@ -49,6 +45,7 @@ class Embedded extends Component {
                 backgroundColor: "rgb(3, 7, 64)",
                 textTransform: "lowercase",
                 fontWeight: "bold",
+                marginTop:"80px",
               }}
             >
               learn more

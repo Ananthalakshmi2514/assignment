@@ -1,7 +1,7 @@
 /*import logo from './logo.svg';*/
 import Button from '@mui/material/Button';
 import Header from"./Components/header";
-import Navigation from"./Components/navigation";
+import { Grid } from '@mui/material';
 
 import './App.css';
 import Banner from './Components/banner';
@@ -13,6 +13,7 @@ import Mission from './Components/mission';
 import Serivce from './Components/services';
 import Signup from './Components/signup';
 import Footer from './Components/footer';
+import Navigation from './Components/navigation';
 
 
 function App() {

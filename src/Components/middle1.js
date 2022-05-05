@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import drawing from "../images/download (1).jfif";
+import image12 from "../images/download (1).jfif";
 import Button from "@mui/material/Button";
 
 class Middle1 extends Component {
@@ -12,10 +12,10 @@ class Middle1 extends Component {
   render() {
     return (
       <Fragment>
-        <div className="best-main">
+        <div className="middle1-main">
           <div className="color"></div>
-          <img src={drawing} className="drawing" alt="Plan Design" />
-          <div className="best-sub">
+          <img src={image12} className="image12" alt="" />
+          <div className="middle1-content">
             <h2>Who are the best 100 architecture firms in the world?</h2>
             <p>{this.state.Duis}</p>
             <p>image from</p>

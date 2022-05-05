@@ -1,5 +1,5 @@
 import React, { Component, Fragment } from "react";
-import image7 from "../images/download8.jfif";
+import image7 from "../images/smilygirl.jpg";
 import Button from "@mui/material/Button";
 import { FormatQuote } from "@mui/icons-material";
 
@@ -7,10 +7,10 @@ class Mission extends Component {
   render() {
     return (
       <Fragment>
-        <div className="success">
-          <div className="y-beam"></div>
-          <img src={image7} alt="Simling Lady" className="smilimg" />
-          <div className="y-beam-info">
+        <div className="smilygirl">
+          <div className="smimage"></div>
+          <img src={image7} alt="" className="image7" />
+          <div className="smimage-info">
             <h2>
               We belive design should have a positive impact on people's lives
               and the environment
@@ -36,7 +36,7 @@ class Mission extends Component {
           <div className="quote">
             <FormatQuote
               style={{
-                fontSize: "110px",
+                fontSize: "40px",
                 transform: "rotate(180deg)",
                 marginBottom: "-30px",
               }}
