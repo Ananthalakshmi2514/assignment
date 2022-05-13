@@ -3,11 +3,27 @@
   padding-left:0;
   padding-right: 0;
 }
-.my-header {
+.header {
   margin: 0 100px;
 }
+.header-links{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content:space-around;
+  align-items: center;
+  list-style: none;
+  width: 35vh;
 
-
+  }
+@media screen and (max-width:720px){
+  .header{
+      margin: 0;
+      background-color: blue;
+  }
+  ul{
+    flex-flow: column nowrap;
+  }
+}
 .main {
   display: flex;
   justify-content: space-evenly;
@@ -84,6 +100,72 @@
   margin: 0;
 
 }
+@media screen and (max-width: 720px) {
+  .main{
+    background: linear-gradient(180deg, #ffffff 50%, #f7cf1a 50%);
+    min-height: max-content;
+  }
+
+  .image1 {
+    margin-right: 0px;
+  }
+  .image2,
+  .image3 {
+    margin-top: 10px;
+    margin-right: 0px;
+  }
+  .ofc-content {
+    margin-top: 10px;
+    margin-left: 00px;
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:400px) {
+  .main {
+    min-height: max-content;
+    background:( #ffffff 50%, #f7cf1a 50%)
+  }
+  .image1 {
+    width: 190px;
+    height: 110px;
+  }
+  .image2 {
+    width: 185px;
+    height: 100px;
+  }
+  .image3 {
+    width: 125px;
+    height: 190px;
+    margin-left: 430px;
+  }
+  .ofc-content {
+    width: 175px;
+    height: 125px;
+    margin-left:auto;
+    padding: 115px;
+    line-height: 1.8rem;
+    text-align: center;
+  }
+
+  .ofc-content h1 {
+    font-size:medium;
+  }
+
+  .ofc-con-1 {
+    font-size: small;
+    font-weight: bolder;
+    margin: 0;
+  }
+  .ofc-con-2{
+    font-size:medium;
+  }
+  #button-responsive {
+    font-size: 10px;
+  }
+}
+
+
 .Arch {
   height: 300px;
 
@@ -127,6 +209,31 @@
 
 .ar > * {
   margin: 10px 20px;
+}
+@media screen and (max-width:720px) {
+  .Arch{
+    max-height: max-content;
+  }
+  .Arch-heading{
+    font-size: medium;
+    color: #f7cf1a;
+    text-align: center;
+    margin-left: auto;
+  }
+  
+}
+@media screen and (max-width:600px) {
+  .Arch{
+    max-height: fit-content;
+  }
+  .Arch-heading{
+    font-size: small;
+  }
+  .Arch-apur{
+    flex-grow: column;
+    
+  }
+  
 }
 .aboutus{
   background-color:rgb(20,23,72);
@@ -191,6 +298,21 @@
   letter-spacing: 0.1rem;
   font-size: 14px;
   margin-bottom: 15px;
+}
+@media screen  and (max-width:768px){
+  .aboutus{
+    max-height: max-content;
+  
+  }
+  
+}
+@media screen and(max-width:600px) {
+  .aboutus{
+    min-height: max-content;
+    align-items: center;
+    margin-left:- 200px;
+  }
+  
 }
 .middle1-main{
   height: 700px;

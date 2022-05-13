@@ -4,6 +4,27 @@ import image2 from "../images/building2.jpg";
 import image3 from "../images/building3.jpg";
 import Button from "@mui/material/Button";
 class Navigation extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+      text:" Integrated design practice of architecture, landscape, interiors",
+      ischange:true
+    }
+  }
+  clickHandler=() =>{
+    if(this.state.ischange){
+      this.setState({
+        text:'hello', ischange:false
+      })
+    }
+    else{
+this.setState({
+  text:" Integrated design practice of architecture, landscape, interiors", ischange:true
+
+})
+}
+    }   
   render() {
     return (
       <Fragment>
@@ -18,8 +39,7 @@ class Navigation extends Component {
             <img src={image3} className="image3"  alt=""/>
             <div className="ofc-content">
               <h1>WHAT WE DO</h1>
-              <p className="ofc-con-1">
-                Integrated design practice of architecture, landscape, interiors
+              <p className="ofc-con-1">{this.state.text}
               </p>
               <p className="ofc-con-2">
                 image from <a href="#">Freepik</a>
@@ -33,7 +53,8 @@ class Navigation extends Component {
                   backgroundColor: "rgb(3, 7, 64)",
                   textTransform: "lowercase",
                   fontWeight: "bold",
-                }}
+                  
+                }} onClick={() => this.clickHandler()}
               >
                 learn more
               </Button>

@@ -7,7 +7,7 @@ class Aboutus extends Component {
     super();
     this.state = {
       sampleText:
-        "Sample text. Click to select the text box. Click again or doubleclick to start editing the text.",
+        "Sample text. Click to select the text box. Click again or doubleclick to start editing the text.",ischange:true,
       aboutUs:
       "we work at all scales and in all sectors",
       info:
@@ -16,7 +16,15 @@ class Aboutus extends Component {
      "The future of how we live ,work and play",
      abtright2:
      " Look toward the future"
-    };
+    }
+  }
+  clickHandler=()=>{
+    if(this.state.ischange){
+      this.setState({sampleText:'start eding the text',ischange:false})
+    }
+    else{
+      this.setState({sampleText:" Sample text. Click to select the text box. Click again or doubleclick to start editing the text." ,ischange:true})
+    }
   }
   render() {
     return (
@@ -52,7 +60,7 @@ class Aboutus extends Component {
                 fontWeight: "bold",
                 color: "#000",
                 marginTop: "15px",
-              }}
+              }} onClick={()=> this.clickHandler()}
             >
               learn more
             </Button>

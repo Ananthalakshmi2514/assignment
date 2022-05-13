@@ -14,12 +14,16 @@ import Serivce from './Components/services';
 import Signup from './Components/signup';
 import Footer from './Components/footer';
 import Navigation from './Components/navigation';
+import {
+  Routes,
+  Route,
+} from "react-router-dom";
 
 
 function App() {
   return (
     <div className="App">
-<Header/>
+  <Header/>
 <Navigation/>
 <Banner/>
 <Aboutus/>
@@ -28,9 +32,21 @@ function App() {
 <Embedded/>
 <Mission/>
 <Serivce/>
-<Signup/>
-<Footer/>
-
+<Signup/> 
+<Footer/>  
+<Routes>
+          <Route exact path="/header" element={<Header />} />
+          <Route exact path="/navigation" element={<Navigation />} />
+          <Route exact path="/banner" element={<Banner />} />
+          <Route exact path="/aboutus" element={<Aboutus />} />
+          <Route exact path="/middle1" element={<Middle1 />} />
+          <Route exact path="/aboutcomp" element={<AboutComp />} />
+          <Route exact path="/Embedded" element={<Embedded/>} />
+          <Route exact path="/mission" element={<Mission />} />
+          <Route exact path="/service" element={<Serivce />} />
+          <Route exact path="/signup" element={<Signup/>} />
+          <Route exact path="/footer" element={<Footer/>} />
+    </Routes>
     </div>
   );
 }

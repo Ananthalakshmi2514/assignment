@@ -15,7 +15,16 @@ class Embedded extends Component {
         borderRadius: "100%",
         fontSize: "90px",
          },
-    };
+         head:"We Create embedded architecture",ischange:true
+    }
+  }
+  clickHandler=()=>{
+      if(this.state.ischange){
+        this.setState({head:"Welcome",ischange:false})
+      }
+      else{
+        this.setState({head:"We Create embedded architecture" ,ischange:true})
+      }
   }
   render() {
     return (
@@ -28,7 +37,7 @@ class Embedded extends Component {
           <img src={image6} alt="architecture " className="image6"/>
           <div className="Wecreate">
             <ArchitectureIcon style={this.state.styles} />
-            <h2>We Create embedded architecture</h2>
+            <h2>{this.state.head}</h2>
             <p>
               Paragraph. Lorem ipsum dolor sit amet,<br/> consectetur adipiscing
               elit. Curabitur id suscipit <br/>ex.Suspendisse rhoncus laoreet purus
@@ -46,7 +55,7 @@ class Embedded extends Component {
                 textTransform: "lowercase",
                 fontWeight: "bold",
                 marginTop:"80px",
-              }}
+              }} onClick={()=> this.clickHandler()}
             >
               learn more
             </Button>

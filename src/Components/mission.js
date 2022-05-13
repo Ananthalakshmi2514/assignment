@@ -4,6 +4,22 @@ import Button from "@mui/material/Button";
 import { FormatQuote } from "@mui/icons-material";
 
 class Mission extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       first:" We belive design should have a positive impact on people's lives and the environment" ,ischange:true
+
+    }
+  }
+  clickHandler=()=>{
+    if(this.state.ischange){
+      this.setState({first:"sucess is not final",ischange:false})
+    }
+    else{
+      this.setState({first:"We belive design should have a positive impact on people's lives and the environment",ischange:true})
+    }
+  }
   render() {
     return (
       <Fragment>
@@ -12,8 +28,7 @@ class Mission extends Component {
           <img src={image7} alt="" className="image7" />
           <div className="smimage-info">
             <h2>
-              We belive design should have a positive impact on people's lives
-              and the environment
+              {this.state.first }
             </h2>
             <p>
               Images from <a href="#">Freepik</a>
@@ -28,7 +43,7 @@ class Mission extends Component {
                 fontWeight: "bold",
                 color: "#fff",
                 marginTop: "15px",
-              }}
+              }} onClick={()=>this.clickHandler()}
             >
               learn more
             </Button>

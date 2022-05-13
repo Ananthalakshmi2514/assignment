@@ -5,6 +5,21 @@ import image10 from "../images/download7.jpg";
 import Button from "@mui/material/Button";
 
 class Serivce extends Component {
+  constructor(props) {
+    super(props)
+  
+    this.state = {
+       text:"Full service architecture design studio with offices in Brooklyn,New York and Richmond",ischange:true
+    }
+  }
+  clickHandler=()=>{
+    if(this.state.ischange){
+      this.setState({text:"more services",ischange:false})
+    }
+    else{
+      this.setState({text:"Full service architecture design studio with offices in Brooklyn,New York and Richmond" ,ischange:true})
+    }
+  }
   render() {
     return (
       <Fragment>
@@ -17,8 +32,7 @@ class Serivce extends Component {
           <div className="wwd">
             <h3>WHAT WE DO</h3>
             <h2>
-              Full service<br/> architecture design <br/>studio with offices in <br/>Brooklyn,
-              New York <br/>and Richmond
+              {this.state.text}
             </h2>
             <p>
               Images from <a href="#">Freepik</a>
@@ -33,7 +47,7 @@ class Serivce extends Component {
                 fontWeight: "bold",
                 color: "#fff",
                 marginTop: "15px",
-              }}
+              }} onClick={()=> this.clickHandler()}
             >
               learn more
             </Button>

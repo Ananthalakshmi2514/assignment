@@ -7,7 +7,18 @@ class AboutComp extends Component {
     this.state = {
       abtcmp:
         "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
-    };
+        ischange:true
+    }
+  }
+  clickHandler= ()=>{
+    if(this.state.ischange)
+    {
+      this.setState({abtcmp:'welcome',ischange:false})
+     }
+     else{
+       this.setState({abtcmp:" Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",ischange:true
+       })
+     }
   }
   render() {
     return (
@@ -29,7 +40,7 @@ class AboutComp extends Component {
                   backgroundColor: "rgb(3, 7, 64)",
                   textTransform: "lowercase",
                   fontWeight: "bold",
-                }}
+                }} onClick={()=>this.clickHandler()}
               >
                 read more
               </Button>
