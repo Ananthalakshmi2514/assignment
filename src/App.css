@@ -15,15 +15,15 @@
   width: 35vh;
 
   }
-@media screen and (max-width:720px){
+ @media screen and (min-width:480px){
   .header{
       margin: 0;
-      background-color: blue;
   }
   ul{
     flex-flow: column nowrap;
+    
   }
-}
+} 
 .main {
   display: flex;
   justify-content: space-evenly;
@@ -100,72 +100,16 @@
   margin: 0;
 
 }
-@media screen and (max-width: 720px) {
-  .main{
-    background: linear-gradient(180deg, #ffffff 50%, #f7cf1a 50%);
-    min-height: max-content;
+ @media screen and ( min-width:480px){
+  .left-main{
+    background-color: #fff;
+    width: 50%;
   }
-
-  .image1 {
-    margin-right: 0px;
+  .right-main{
+    background-color: #f7cf1a;
+    width:50%;
   }
-  .image2,
-  .image3 {
-    margin-top: 10px;
-    margin-right: 0px;
-  }
-  .ofc-content {
-    margin-top: 10px;
-    margin-left: 00px;
-    margin-bottom: 50px;
-  }
-}
-
-@media screen and (max-width:400px) {
-  .main {
-    min-height: max-content;
-    background:( #ffffff 50%, #f7cf1a 50%)
-  }
-  .image1 {
-    width: 190px;
-    height: 110px;
-  }
-  .image2 {
-    width: 185px;
-    height: 100px;
-  }
-  .image3 {
-    width: 125px;
-    height: 190px;
-    margin-left: 430px;
-  }
-  .ofc-content {
-    width: 175px;
-    height: 125px;
-    margin-left:auto;
-    padding: 115px;
-    line-height: 1.8rem;
-    text-align: center;
-  }
-
-  .ofc-content h1 {
-    font-size:medium;
-  }
-
-  .ofc-con-1 {
-    font-size: small;
-    font-weight: bolder;
-    margin: 0;
-  }
-  .ofc-con-2{
-    font-size:medium;
-  }
-  #button-responsive {
-    font-size: 10px;
-  }
-}
-
-
+} 
 .Arch {
   height: 300px;
 
@@ -210,31 +154,24 @@
 .ar > * {
   margin: 10px 20px;
 }
-@media screen and (max-width:720px) {
+ @media screen and (min-width:480px) {
   .Arch{
-    max-height: max-content;
+    align-items: center;
   }
   .Arch-heading{
-    font-size: medium;
-    color: #f7cf1a;
-    text-align: center;
-    margin-left: auto;
+    font-size:40px;
+    color: blue;
+    align-items: center;
   }
-  
-}
-@media screen and (max-width:600px) {
-  .Arch{
-    max-height: fit-content;
-  }
-  .Arch-heading{
-    font-size: small;
+  .Arch-pg{
+    font-size: 20px;
   }
   .Arch-apur{
-    flex-grow: column;
-    
+    flex-direction:row;
+    font-size: larger;
   }
-  
-}
+} 
+
 .aboutus{
   background-color:rgb(20,23,72);
   height: 850px;
@@ -299,21 +236,25 @@
   font-size: 14px;
   margin-bottom: 15px;
 }
-@media screen  and (max-width:768px){
+  @media screen  and (min-width:480px){
   .aboutus{
-    max-height: max-content;
-  
-  }
-  
-}
-@media screen and(max-width:600px) {
-  .aboutus{
-    min-height: max-content;
-    align-items: center;
-    margin-left:- 200px;
-  }
-  
-}
+    padding: 10px 10px;
+    margin-left: 80px;
+    background-color:cornflowerblue;
+    margin-top:20px;
+   }
+   .abtus-left{
+    
+     font-size: medium;
+   }
+   .abtus-left h4{
+     font-size: medium;
+   }
+   .abtus-right{
+     font-size: medium;
+   }
+
+   } 
 .middle1-main{
   height: 700px;
 }
@@ -356,6 +297,23 @@
   font-size: 17px;
   line-height:2rem;
 }
+ @media screen and (min-width:480px){
+  .middle1-main{
+    margin:0;
+    padding: 0 0px;
+
+  }
+  .image12{
+    height:300px;
+    width:350px ;
+  }
+  .middle1-content{
+    margin-left: 500px;
+  }
+  .color{
+    width: 100%;
+  }
+} 
 .AboutComp{
   display: flex;
   height: 500px;
@@ -393,6 +351,18 @@
   line-height: 1.8rem;
   text-align:justify;
 }
+ @media screen and (min-width:480px){
+  .AboutComp{
+    margin: 0;
+    padding: 0;
+  
+  }
+  .abtcmp-R{
+    font-size: 10px;
+    line-height: 0.8rem;
+  }
+} 
+
 .embedded{
   display: flex;
   flex-direction: column;
@@ -498,6 +468,18 @@
   margin-top: 50px;
   margin-left: 150px;
 }
+ @media screen and(min-width:480px) {
+  .embedded{
+    margin: 0;
+    padding: 0 0px;
+  }
+  .Wecreate {
+    font-size: small;
+    line-height:0.2rem;
+  height: 350px;
+
+  }
+} 
 .service{
   display: flex;
   height:1200px;
@@ -552,6 +534,16 @@ font-weight: bold;
 .wwd h2{
   font-size:40px;
 }
+ @media screen and (min-width:485px) {
+  .service-left{
+    background-color: rgb(255, 208,0);
+    width: 50%;
+  }
+  .wwd h2{
+    font-size: 20px;
+  }
+
+  } 
 .signup{
 height: 1000px;
 }
@@ -596,6 +588,19 @@ height: 1000px;
   margin-left:10px;
   width: 50%;
 }
+ @media screen and (min-width:485px) {
+  .signup{
+    padding-left: 10px;
+  }
+  .image11{
+    height: 500px;
+    width:1000px
+  }
+  .Ex-offrs{
+    padding: 10px;
+    margin-left:0px;
+  }
+} 
 .footer{
   margin-top:-150px;
   width: 100%;
@@ -612,10 +617,21 @@ height: 1000px;
   margin-left: 560px;
   margin-top: 50px;
   line-height: 01.8rem;
-
-
 }
-
+ @media screen and (min-width:485px) {
+  .footer{
+  margin: 0px;
+  padding:10px ;
+margin-top: -130px; 
+height: 100px;
+width: 280%;
+}
+.footer-content  p{
+ text-align: center;
+font-size: 20px;
+margin-left: 100px;
+}
+} 
 
 
 
